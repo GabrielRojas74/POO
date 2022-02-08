@@ -12,7 +12,7 @@ class Main {
     int contadormult3 = 0; 
     int contadormult5 = 0;
     
-      System.out.println("Se requiere el ingreso de dos números enteros, el primero menor que el segundo,e informar al usuario en el rango de los dos números cuántos de ellos son múltiplos de 3 y cuántos múltiplos de 5. Use una función principal.");
+      System.out.println("\nSe requiere el ingreso de dos números enteros, el primero menor que el segundo,e informar al usuario en el rango de los dos números cuántos de ellos son múltiplos de 3 y cuántos múltiplos de 5. Use una función principal.\n");
       
         System.out.println("Favor ingresar el primer número ");
         valor1 = reader.nextInt(); 
