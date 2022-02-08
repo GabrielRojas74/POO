@@ -12,7 +12,7 @@ class Main {
     int contadorpar = 0; 
     int contadorin = 0;
     
-      System.out.println("Realizar una función Calculo que solicite dos números enteros y calcule la suma de todos los números pares, por un lado, y por otro, la  de los impares que se encuentran en el rango. Mostrarla salida al usuario. No olvide usar el operador módulo (%) para realizar el ejercicio.");
+      System.out.println("\nRealizar una función Calculo que solicite dos números enteros y calcule la suma de todos los números pares, por un lado, y por otro, la  de los impares que se encuentran en el rango. Mostrarla salida al usuario. No olvide usar el operador módulo (%) para realizar el ejercicio.\n");
       
         System.out.println("Favor ingresar el primer número ");
         valor1 = reader.nextInt(); 
