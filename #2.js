@@ -24,11 +24,11 @@ class Main {
 
         while (valor2 >= valor1) {
             if (valor1 % 2 == 0) {
-                contadorpar = contadorpar + 1;
+                contadorpar = contadorpar +valor1;
             }
 
           else {
-                contadorin = contadorin + 1;
+                contadorin = contadorin +valor1;
             }
 
             valor1 = valor1 + 1;
