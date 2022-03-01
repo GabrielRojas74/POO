@@ -37,7 +37,7 @@ private static Scanner reader;
       default: {
 	    System.out.println("Opcion incorrecta");
 	    }
-	      }//cierra SWITCH
+	      }//cierra SWITC
 
 	} // cierre función main
 } //cierre clase
