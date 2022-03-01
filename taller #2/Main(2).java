@@ -41,7 +41,7 @@ class Main {
   while (num<veces);//fin
     //imp tot
       float totalprom = promedio(lista);
-        System.out.println("el promedio es: "+(totalprom));
+        System.out.println("el promedio es: "+totalprom);
   }
 
 }
