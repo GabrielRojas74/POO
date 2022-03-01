@@ -32,6 +32,7 @@ class Main {
   System.out.println("ingrese el numero de notas: ");
     int veces =readerint.nextInt();
     do {
+      
       System.out.println("escriba la nota: ");
       notas = readerf.nextFloat();
       lista.add(notas);
