@@ -29,7 +29,7 @@ class Main {
     float notas;
     int num= 0;
   System.out.println("\nPreguntar al usuario cuántas notas desea ingresar, solicitar las notas y almacenarlas en una lista. Cree una función que reciba la lista y retorne el promedio.\n ");
-  System.out.println("ingrese el numero de notas: ");
+  System.out.println("ingrese el numero de notas que desea ingrasar: ");
     int veces =readerint.nextInt();
     do {
       
