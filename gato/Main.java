@@ -49,9 +49,7 @@ public class Main {
        default: {
 	    System.out.println("Opcion incorrecta");
 	    }
-          
-    
-     
+       
      } 
     
     } 
