@@ -36,7 +36,7 @@ public class Main {
         juego= tod.nextInt();
         for (int i=0; i<juego;i++){
         Paco.jugar();
-        break;}
+        }
         break;}
         case 3: {
         System.out.println("\n"+"·Cuantas horas va a dormir  "+nombre+"?"+" (de 1 a 5 horas)");
