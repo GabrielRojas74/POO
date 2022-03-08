@@ -1,81 +1,52 @@
 import java.util.Scanner;
-public class Gato {
-  
-  String raza;
-  private String color;
-  int energia;
-  int nivelcomida;
+public class Main {
+  public static Scanner tod= new Scanner (System.in);
+  public static Scanner stri= new Scanner (System.in);
+  public static void main (String[]args){
+    String nombre, color;
+    int energia, comida, x, y, horas, juego;
+    System.out.println("Bienvenido al tamagochi EAN");
+    
+    System.out.println("Cual es el nombre del gato?: ");
+    nombre= stri.nextLine();
+    System.out.println("Cual es el color de "+nombre+"?");
+    color= stri.nextLine();
+    System.out.println("Cuanta energia tiene "+nombre+"?");
+    energia= tod.nextInt();
+    
+    System.out.println("Cual es el nivel de alimento de "+nombre+"?");
+    comida= tod.nextInt();
+    
+    System.out.println("·Que quieres hacer con "+nombre+"?"+"\n"+"·1 alimentarlo"+"\n"+ "·2 jugar "+"\n"+"·3 dormir"+"\n"+"·4 salir");
+    y= tod.nextInt();  
 
-  //Constructor de la clase Gato
-  public Gato(String raza, String color, int energia, int nivelcomida){
-    super();
-    this.raza=raza;
-    this.color=color;
-    this.energia=energia;
-    this.nivelcomida=nivelcomida;
+ // Creación del objeto Paco que pertenece a la clase Gato (Instancia)
+    Gato Paco= new Gato(nombre, color, energia, comida);
+    
+      switch(y){
+        case 1: {
+        System.out.println("·Cuanta comida quiere darle a "+nombre+"?");
+        x= tod.nextInt();
+        Paco.comer(x);
+        break;
+          }
+        case 2: {
         
-  }
-  // metodo para dar de comer al gato
-  public void comer(int comida){
-    if (this.nivelcomida<=100){
-    System.out.println("el gato esta lleno");
-      }
-    else{
-    this.nivelcomida=nivelcomida+comida;
-    System.out.println("el nivel de comida es de "+ this.nivelcomida+"%");
-      }
-    
-  }
-  //metodo para hacer dormir al gato
-  public void dormir(int horas){
-    if (this.energia<=100){
-    System.out.println("el gato tiene la energia completa");
-      }
-    else{
-    
-    switch (horas){
-      case 1: {
-        this.energia=energia+1;
-      System.out.println("El gato tiene "+ this.energia+ " % de energia");
-      
-      break;}
-      case 2:{
-        this.energia=energia+2;
-    System.out.println("El gato tiene "+ this.energia+ " % de energia");
-      
-      break;}
-      case 3:{
-        this.energia=energia+3;
-    System.out.println("El gato tiene "+ this.energia+ " % de energia");
-      
-      break;}
-      case 4:{
-        this.energia=energia+4;
-    System.out.println("El gato tiene "+ this.energia+ " % de energia");
-      }
-      break;
-      case 5:{
-        this.energia=energia+5;
-    System.out.println("El gato tiene "+ this.energia+ " % de energia");
+        System.out.println("·Cuantas veces quieres jugar con "+nombre+"?");
+        juego= tod.nextInt();
+        for (int i=0; i<juego;i++){
+        Paco.jugar();
+        break;}
+        break;}
+        case 3: {
+        System.out.println("\n"+"·Cuantas horas va a dormir  "+nombre+"?"+" (de 1 a 5 horas)");
+        horas=tod.nextInt();
+        Paco.dormir(horas);       
+        break;}
+        case 4:{
+          break;
+        }
+       default: {
+	    System.out.println("Opcion incorrecta");
+	    }
           
-      break;}
-    }
-      }
-  }
-  // En este metodo podremos jugar con el gato
-  public void jugar(){
-    
-    if (this.energia<=0  || this.nivelcomida<=0){
-      System.out.print("El gato no quiere jugar, su energia es del " + this.energia+"% ");
-      }
-    else {
-        
-      this.energia-=5;
-      this.nivelcomida-=5;
-      System.out.print("\n"+"A el gato le encata jugar"+"\n"+"su nivel de energia es del "+this.energia+"%"+"\n"+"y su nivel de comida es del " +this.nivelcomida+"%");
-       
-       
-      }
-      
-      }
-  }
